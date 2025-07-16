@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bcoj8756jufru"]
+
+[node name="character" type="Node3D"]
+
+[node name="body" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="body"]
