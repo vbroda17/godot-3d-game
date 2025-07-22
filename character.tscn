@@ -4,26 +4,31 @@
 
 [node name="body" type="Node3D" parent="."]
 
-[node name="left Leg2" type="CSGBox3D" parent="body"]
+[node name="torso" type="CSGBox3D" parent="body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+use_collision = true
 size = Vector3(0.6, 0.8, 0.25)
 
 [node name="right Leg" type="CSGBox3D" parent="body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
+use_collision = true
 size = Vector3(0.25, 1, 0.25)
 
 [node name="left Leg" type="CSGBox3D" parent="body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0)
+use_collision = true
 size = Vector3(0.25, 1, 0.25)
 
 [node name="head" type="CSGSphere3D" parent="body"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.54802, 0)
+use_collision = true
 radius = 0.25
 
 [node name="right Arm" type="Node3D" parent="body"]
 
 [node name="right Shoulder" type="CSGSphere3D" parent="body/right Arm"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.285, 1.25, 0)
+use_collision = true
 radius = 0.13
 
 [node name="right Bisep" type="CSGBox3D" parent="body/right Arm/right Shoulder"]
@@ -42,6 +47,7 @@ size = Vector3(0.125, 0.4, 0.125)
 
 [node name="left Shoulder" type="CSGSphere3D" parent="body/left Arm"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.285, 1.25, 0)
+use_collision = true
 radius = 0.13
 
 [node name="left Bisep" type="CSGBox3D" parent="body/left Arm/left Shoulder"]
